@@ -1,0 +1,20 @@
+
+
+.container{
+    display: flex;
+  border: 2px solid;
+  gap: 20px;
+  height: 100vh;
+  overflow: scroll;
+}
+h2{
+    border: 2px solid red;
+}
+.hildOne{
+    flex: 1;
+    border: 2px solid;
+}
+.childTwo{
+    flex: 1;
+    
+}
