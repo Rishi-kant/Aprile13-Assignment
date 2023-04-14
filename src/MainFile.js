@@ -8,12 +8,13 @@ export default function MainFile() {
   async function fetchData () {
     const data = await fetch("https://jsonplaceholder.typicode.com/posts")
     const jsonData= await data.json()
-    console.log(jsonData)
     setData(jsonData)
   }
+
   useEffect(()=>{
     fetchData()
   },[])
+
   function HandleClick(body){
      setShow(body)
   }
@@ -22,7 +23,7 @@ export default function MainFile() {
       <div className="childOne">
         <h1>Post List</h1>
        {
-         data.map((ele,index)=>{
+         data.map((ele)=>{
           return(
               <h2  onClick={()=>{HandleClick(ele.body)}}>
                 {ele.title}
@@ -33,7 +34,7 @@ export default function MainFile() {
         </div>
         <div className="childTwo">
             <h1>Post Detail</h1>
-        {show}
+         <h3>{show}</h3> 
        </div>
     </div>
   );

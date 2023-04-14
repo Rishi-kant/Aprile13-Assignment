@@ -9,6 +9,7 @@
 }
 h2{
     border: 2px solid red;
+    background-color: yellow;
 }
 .hildOne{
     flex: 1;
@@ -16,5 +17,6 @@ h2{
 }
 .childTwo{
     flex: 1;
+    
     
 }
